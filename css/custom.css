@@ -1,3 +1,31 @@
+
+
+/* Print
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.marg-top {
+    margin-top: 25%;
+}
+.marg-bot {
+    margin-bottom: 25%;
+}
+@media print {
+    .break {
+      page-break-after: always;
+    }
+    .docs-section {
+      padding: 0rem 0;
+    }
+    .whole {
+      page-break-inside: avoid;
+    }
+    .marg-top {
+        margin-top: 0;
+    }
+    .marg-bot {
+        margin-bottom: 0;
+    }
+}
+
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
